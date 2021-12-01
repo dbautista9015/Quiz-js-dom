@@ -17,33 +17,35 @@ changeColorBtn.addEventListener("click", function(e){
     else {
         let parsedBoxNumber = parseInt(boxNumber.value, 10);
         
-        switch (parsedBoxNumber) {
-            case 1:
-                document.getElementById("box1").style.backgroundColor = changeColor.value.toLowerCase();
-                break;
-            case 2:
-                document.getElementById("box2").style.backgroundColor = changeColor.value.toLowerCase();
-                break;
-            case 3:
-                document.getElementById("box3").style.backgroundColor = changeColor.value.toLowerCase();
-                break;
-            case 4:
-                document.getElementById("box4").style.backgroundColor = changeColor.value.toLowerCase();
-                break;
-            case 5:
-                document.getElementById("box5").style.backgroundColor = changeColor.value.toLowerCase();
-                break;
-            case 6:
-                document.getElementById("box6").style.backgroundColor = changeColor.value.toLowerCase();
-                break;
-            case 7:
-                document.getElementById("box7").style.backgroundColor = changeColor.value.toLowerCase();
-                break;
-            case 8:
-                document.getElementById("box8").style.backgroundColor = changeColor.value.toLowerCase();
-                break;
+        // switch (parsedBoxNumber) {
+        //     case 1:
+        //         document.getElementById("box1").style.backgroundColor = changeColor.value.toLowerCase();
+        //         break;
+        //     case 2:
+        //         document.getElementById("box2").style.backgroundColor = changeColor.value.toLowerCase();
+        //         break;
+        //     case 3:
+        //         document.getElementById("box3").style.backgroundColor = changeColor.value.toLowerCase();
+        //         break;
+        //     case 4:
+        //         document.getElementById("box4").style.backgroundColor = changeColor.value.toLowerCase();
+        //         break;
+        //     case 5:
+        //         document.getElementById("box5").style.backgroundColor = changeColor.value.toLowerCase();
+        //         break;
+        //     case 6:
+        //         document.getElementById("box6").style.backgroundColor = changeColor.value.toLowerCase();
+        //         break;
+        //     case 7:
+        //         document.getElementById("box7").style.backgroundColor = changeColor.value.toLowerCase();
+        //         break;
+        //     case 8:
+        //         document.getElementById("box8").style.backgroundColor = changeColor.value.toLowerCase();
+        //         break;
                         
-        }
+        // }
+
+        document.getElementById(`box${parsedBoxNumber}`).style.backgroundColor = changeColor.value.toLowerCase();
         
     }
 
